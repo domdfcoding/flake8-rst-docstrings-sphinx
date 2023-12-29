@@ -67,7 +67,7 @@ flake8-rst-docstrings-sphinx
 	:target: https://github.com/domdfcoding/flake8-rst-docstrings-sphinx/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2023
 	:alt: Maintenance
 
 .. end shields
