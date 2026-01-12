@@ -85,7 +85,7 @@ def main(
 		disallow_sphinx: bool,
 		allow_autodoc: bool,
 		allow_toolbox: bool,
-		):
+		) -> None:
 	"""
 	Wrapper around flake8 and flake8-rst-docstrings to filter out warnings related to Sphinx's built in options.
 	"""
@@ -97,11 +97,11 @@ def main(
 		rst_directives,
 		allow_autodoc=allow_autodoc,
 		allow_toolbox=allow_toolbox,
-		)
+	)
 
 	if not disallow_sphinx:
-		unknown.append(f"--rst-directives=" + ','.join(rst_directives))
-		unknown.append(f"--rst-roles=" + ','.join(rst_roles))
+		unknown.append("--rst-directives=" + ','.join(rst_directives))
+		unknown.append("--rst-roles=" + ','.join(rst_roles))
 
 	app = Application()
 	app.run(unknown)

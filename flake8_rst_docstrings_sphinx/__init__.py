@@ -31,7 +31,7 @@ import re
 from configparser import ConfigParser
 from functools import partial
 from gettext import ngettext
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 # this package
 from flake8_rst_docstrings_sphinx.domains import Autodoc, Builtin, Domain, Toolbox
@@ -54,7 +54,7 @@ def compile_options(
 		*,
 		allow_autodoc: bool = False,
 		allow_toolbox: bool = False,
-		):
+		) -> Tuple[List[str], List[str]]:
 	"""
 	Compile the list of allowed roles and directives.
 
